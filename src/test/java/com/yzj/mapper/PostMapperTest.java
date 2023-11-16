@@ -1,6 +1,6 @@
 package com.yzj.mapper;
 
-import com.yzjmodel.entity.Post;
+import com.yzj.model.entity.Post;
 import java.util.Date;
 import java.util.List;
 import javax.annotation.Resource;

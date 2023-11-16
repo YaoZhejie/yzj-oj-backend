@@ -1,9 +1,9 @@
 package com.yzj.esdao;
 
-import com.yzjmodel.dto.post.PostEsDTO;
-import com.yzjmodel.dto.post.PostQueryRequest;
-import com.yzjmodel.entity.Post;
-import com.yzjservice.PostService;
+import com.yzj.model.dto.post.PostEsDTO;
+import com.yzj.model.dto.post.PostQueryRequest;
+import com.yzj.model.entity.Post;
+import com.yzj.service.PostService;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.yzj.service;
 
-import com.yzjmodel.entity.User;
+import com.yzj.model.entity.User;
 import javax.annotation.Resource;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
