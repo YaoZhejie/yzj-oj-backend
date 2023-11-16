@@ -1,15 +1,13 @@
 package com.yzj.model.dto.question;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 import java.io.Serializable;
 import java.util.List;
 
 /**
  * 编辑请求
  */
-@EqualsAndHashCode(callSuper = false)
 @Data
 public class QuestionEditRequest implements Serializable {
 
@@ -29,9 +27,9 @@ public class QuestionEditRequest implements Serializable {
     private String content;
 
     /**
-     * 标签列表
+     * 标签列表（json 数组）
      */
-    private List<String> tags;
+    private String tags;
 
     /**
      * 题目答案
@@ -39,14 +37,26 @@ public class QuestionEditRequest implements Serializable {
     private String answer;
 
     /**
-     * 判题用例
+     * 题目提交数
      */
-    private List<JudgeCase> judgeCase;
+    private Integer submitNum;
 
     /**
-     * 判题配置
+     * 题目通过数
      */
-    private JudgeConfig judgeConfig;
+    private Integer acceptedNum;
 
+    /**
+     * 判题用例（json 数组）
+     */
+    private List<String> judgeCase;
+
+    /**
+     * 判题配置（json 对象）
+     */
+    private String judgeConfig;
+
+
+    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

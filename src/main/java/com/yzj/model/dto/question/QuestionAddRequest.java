@@ -1,7 +1,7 @@
 package com.yzj.model.dto.question;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
-
 import java.io.Serializable;
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class QuestionAddRequest implements Serializable {
     private String content;
 
     /**
-     * 标签列表
+     * 标签列表（json 数组）
      */
     private List<String> tags;
 
@@ -32,14 +32,16 @@ public class QuestionAddRequest implements Serializable {
     private String answer;
 
     /**
-     * 判题用例
+     * 判题用例（json 数组）
      */
-    private List<JudgeCase> judgeCase;
+    private String judgeCase;
 
     /**
-     * 判题配置
+     * 判题配置（json 对象）
      */
-    private JudgeConfig judgeConfig;
+    private String judgeConfig;
 
+
+    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }
