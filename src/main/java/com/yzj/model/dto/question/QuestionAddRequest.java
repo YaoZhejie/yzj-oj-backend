@@ -34,12 +34,12 @@ public class QuestionAddRequest implements Serializable {
     /**
      * 判题用例（json 数组）
      */
-    private String judgeCase;
+    private List<JudgeCase> judgeCase;
 
     /**
      * 判题配置（json 对象）
      */
-    private String judgeConfig;
+    private JudgeConfig judgeConfig;
 
 
     @TableField(exist = false)
