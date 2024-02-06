@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * MyBatis Plus 配置
  */
 @Configuration
-@MapperScan("com.yzj.springbootinit.mapper")
+@MapperScan("com.yzj.mapper")
 public class MyBatisPlusConfig {
 
     /**
