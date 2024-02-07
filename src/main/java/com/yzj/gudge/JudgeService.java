@@ -1,4 +1,14 @@
 package com.yzj.gudge;
 
-public class JudgeService {
+
+import com.yzj.model.entity.QuestionSubmit;
+
+public interface JudgeService {
+    /**
+     * 判题
+     *
+     * @param questionSubmitId
+     * @return
+     */
+    QuestionSubmit doJudge(long questionSubmitId);
 }

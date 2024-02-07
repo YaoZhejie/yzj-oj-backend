@@ -16,7 +16,7 @@ public class JudgeInfo {
     /**
      * 消耗内存
      */
-    private Long memopry;
+    private Long memory;
 
     /**
      * 消耗时间
